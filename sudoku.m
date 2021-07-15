@@ -114,7 +114,7 @@ set(handles.edit2,'String',datestr(tm,'HH:MM:SS'));
 
 function init(hObject, handles, restart)
 if ~restart
-    [handles.matrix, handles.res] = generatePuzzle(1);
+    [handles.matrix, handles.res] = generatePuzzle(get(handles.popupmenu1,'Value'));
 end
 set(handles.pushbutton2, 'Enable','on');
 set(handles.pushbutton14, 'Enable','on');
